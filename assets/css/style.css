@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');/*font-family: 'Josefin Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap');/* font-family: 'Stick No Bills', sans-serif; */
+
+:root {
+    --black: #0A0A0B; 
+    --gray: #252939;
+    --gray-blue: #28364E;
+    --blue: #215bf0;
+    --white: #fff;
+    
+    --default: 'Josefin Sans', sans-serif;
+    --special: 'Stick No Bills', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--special);
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient( 120deg, var(--black), var(--gray));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 200px;
+    width: 550px;
+
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+.clock div {
+    height: 170px;
+    width: 150px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--white);
+    background-color: var(--gray-blue);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+
+    letter-spacing: 3px;
+}
+
+.clock span {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.clock span.time {
+    font-size: 10px;
+}
