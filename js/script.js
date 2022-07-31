@@ -2,9 +2,6 @@ const hours = document.querySelector(".hours");
 const minutes = document.querySelector(".minutes");
 const seconds = document.querySelector(".seconds");
 
-const timer = document.querySelector(".clock");
-const button = document.querySelector("#btn-timer")
-
 const clock = setInterval(function time() {
     let dateToday = new Date();
     let hr = dateToday.getHours();
@@ -24,8 +21,4 @@ const clock = setInterval(function time() {
     hours.textContent = hr;
     minutes.textContent = min;
     seconds.textContent = sec;
-})
-
-button.addEventListener("click" , () => {
-    timer.style.display = "none"
 })
